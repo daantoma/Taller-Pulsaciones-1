@@ -1,19 +1,19 @@
-import { PersonaRegistroComponent } from './pulsacion/persona-registro/persona-registro.component';
-import { PersonaConsultaComponent } from './pulsacion/persona-consulta/persona-consulta.component';
 import { NgModule, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
-const routes: Routes = [
+import { PersonaConsultaComponent } from './Pulsacion/persona-consulta/persona-consulta.component';
+import { PersonaRegistroComponent } from './Pulsacion/persona-registro/persona-registro.component';
+const routes: Routes = [
   {
   path: 'personaConsulta',
   component: PersonaConsultaComponent
   },
-  {
+  {
     path: 'personaRegistro',
     component: PersonaRegistroComponent
   }
 ];
-@NgModule({
+@NgModule({
   declarations: [],
   imports: [
     CommonModule,
